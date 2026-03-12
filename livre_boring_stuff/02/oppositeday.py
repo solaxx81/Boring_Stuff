@@ -12,6 +12,6 @@ if today_is_opposite_day == True:
 
 # Say what day it is:
 if say_it_is_opposite_day == True:
-    print('Today is Opposite Day.')
+    print("Today is Opposite Day.")
 else:
-    print('Today is not Opposite Day.')
+    print("Today is not Opposite Day.")
