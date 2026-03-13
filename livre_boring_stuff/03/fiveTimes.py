@@ -1,7 +1,7 @@
-print('Hello!')
+print("Hello!")
 for i in range(5):
-    print('On this iteration, i is set to ' + str(i))
-print('Goodbye!')
+    print("On this iteration, i is set to " + str(i))
+print("Goodbye!")
 
 """
 # This is the same program but with a while loop:
