@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "uv-sync",
+      "type": "shell",
+      "command": "uv sync",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "silent", // Ne t'ouvre pas le terminal dans la figure sauf s'il y a un souci
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "runOptions": {
+        "runOn": "folderOpen" // C'est ici que la magie opère
+      }
+    }
+  ]
+}

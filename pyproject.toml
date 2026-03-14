@@ -5,11 +5,16 @@ description = "Mon projet Python optimisé avec uv et Ruff"
 authors = [{name = "Jean-Yves"}]
 requires-python = ">=3.12"
 dependencies = [
+    "pytest>=9.0.2",
     "requests",
 ]
 
 [tool.uv]
 managed = true
+
+[tool.pytest.ini_options]
+addopts = "--ignore=livre_boring_stuff"
+testpaths = ["."]
 
 # --- Section Pyright (Suggestions de code & IntelliSense) ---
 [tool.pyright]

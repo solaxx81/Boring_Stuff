@@ -1,16 +1,10 @@
 {
+    /* --- CONFIGURATION DES TESTS --- */
     "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestArgs": [
-        "--ignore=livre_boring_stuff",
-        "."
-    ],
     "python.testing.cwd": "${workspaceFolder}",
-    "python-envs.pythonProjects": [
-        {
-            "path": ".",
-            "envManager": "ms-python.python:venv",
-            "packageManager": "ms-python.python:pip"
-        }
-    ],
+
+    /* --- GESTION DE L'ENVIRONNEMENT --- */
+    // On force VSCodium à reconnaître que c'est un projet géré par uv
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
 }
