@@ -1,0 +1,24 @@
+{
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        "--ignore=livre_boring_stuff",
+        "."
+    ],
+    "python.testing.cwd": "${workspaceFolder}",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/.gitignore": true,
+        "**/pyproject.toml": true,
+        "**/*.code-workspace": true,
+        "livre_boring_stuff": false
+    },
+    "python-envs.pythonProjects": [
+        {
+            "path": ".",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ],
+}
