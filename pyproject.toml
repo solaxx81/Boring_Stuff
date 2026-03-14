@@ -1,3 +1,16 @@
+[project]
+name = "boring-stuff"
+version = "0.1.0"
+description = "Mon projet Python optimisé avec uv et Ruff"
+authors = [{name = "Jean-Yves"}]
+requires-python = ">=3.12"
+dependencies = [
+    "requests",
+]
+
+[tool.uv]
+managed = true
+
 [tool.ruff]
 line-length = 120
 target-version = "py314"

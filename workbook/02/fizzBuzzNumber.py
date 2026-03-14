@@ -1,0 +1,10 @@
+nombre = int(input("Entrer un nombre entier : "))
+
+if nombre % 3 == 0 and nombre % 5 == 0:
+    print("Fizz Buzz")
+elif nombre % 5 == 0:
+    print("Buzz")
+elif nombre % 3 == 0:
+    print("Fizz")
+else:
+    print(nombre)
