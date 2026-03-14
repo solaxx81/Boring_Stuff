@@ -1,4 +1,22 @@
+import sys
+import time
+
+indent = 0
+indent_increasing = True
+
 try:
-    print(42 / 0)
-except ZeroDivisionError:
-    print("Division par zéro")
+    while True:
+        print(" " * indent, end="")
+        print("********")
+        time.sleep(0.1)
+
+        if indent_increasing:
+            indent += 1
+            if indent == 20:
+                indent_increasing = False
+        else:
+            indent -= 1
+            if indent == 0:
+                indent_increasing = True
+except KeyboardInterrupt:
+    sys.exit()

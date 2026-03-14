@@ -16,7 +16,6 @@ managed = true
 addopts = "--ignore=livre_boring_stuff"
 testpaths = ["."]
 
-# --- Section Pyright (Suggestions de code & IntelliSense) ---
 [tool.pyright]
 include = ["."]
 exclude = [".venv", "**/__pycache__"]
@@ -24,37 +23,14 @@ venvPath = "."
 venv = ".venv"
 pythonVersion = "3.14"
 typeCheckingMode = "basic"
-reportMissingImports = true
-reportMissingTypeStubs = false
 
-# --- Section Ruff (Linting & Formatage) ---
 [tool.ruff]
 line-length = 120
 target-version = "py314"
 
 [tool.ruff.lint]
-# On garde tes réglages de "Shadowing", errors, warnings, docstrings et imports
-select = [
-    "A",   # Shadowing
-    "E",   # pycodestyle errors
-    "F",   # pyflakes
-    "W",   # warnings
-    "D",   # pydocstyle
-    "I",   # isort (tri des imports)
-    "UP",  # pyupgrade (syntaxe moderne 3.14)
-    "B",   # bugbear
-]
-
-ignore = [
-    "D100", # Missing docstring in public module
-    "D202", # Pas de ligne vide après la docstring
-    "D205", # Ligne vide obligatoire après le résumé
-    "D212", # Résumé sur la première ligne
-    "D400", # Point final obligatoire
-    "D401", # Mood impératif
-    "D403", # Premier mot doit être une majuscule
-    "D415", # Ponctuation finale
-]
+select = ["A", "E", "F", "W", "D", "I", "UP", "B"]
+ignore = ["D100", "D202", "D205", "D212", "D400", "D401", "D403", "D415"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
