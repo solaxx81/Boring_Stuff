@@ -1,8 +1,9 @@
 [project]
 name = "boring-stuff"
 version = "0.1.0"
-description = "Mon projet Python optimisé avec uv et Ruff"
-authors = [{name = "Jean-Yves"}]
+description = "Exercices livre Automate the Boring Stuff"
+readme = "README.md"
+authors = [{name = "JYM"}]
 requires-python = ">=3.12"
 dependencies = [
     "pytest>=9.0.2",
