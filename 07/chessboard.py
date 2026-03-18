@@ -41,6 +41,7 @@ BLACK_SQUARE = '  '
 
 
 def print_chess_board(board):
+    """Affiche l'échiquier"""
     squares = []
     is_white_square = True
     for y in '87654321':
@@ -59,6 +60,7 @@ def print_chess_board(board):
     print(BOARD_TEMPLATE.format(*squares))
 
 def print_help():
+    """Affiche l'aide"""
     print('Interactive Chess Board')
     print('by Al Sweigart al@inventwithpython.com')
     print()
