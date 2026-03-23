@@ -21,7 +21,12 @@ testpaths = ["."]
 
 [tool.pyright]
 include = ["."]
-exclude = [".venv", "**/__pycache__"]
+exclude = [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/.*",         # Exclut tous les dossiers cachés (ex: .git, .venv, .ruff_cache)
+    ".venv"          # Optionnel si déjà couvert par **/.*, mais plus explicite
+]
 venvPath = "."
 venv = ".venv"
 pythonVersion = "3.14"
@@ -30,6 +35,7 @@ typeCheckingMode = "basic"
 [tool.ruff]
 line-length = 120
 target-version = "py314"
+extend-exclude = [".venv", "**/__pycache__"]
 
 [tool.ruff.lint]
 select = ["A", "E", "F", "W", "D", "I", "UP", "B"]
