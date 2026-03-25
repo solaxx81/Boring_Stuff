@@ -10,6 +10,7 @@ dependencies = [
     "pyperclip>=1.11.0",
     "pytest>=9.0.2",
     "requests",
+    "send2trash>=2.1.0",
 ]
 
 [tool.uv]
