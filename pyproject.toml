@@ -6,7 +6,10 @@ readme = "README.md"
 authors = [{name = "JYM"}]
 requires-python = ">=3.12"
 dependencies = [
+    "bext>=0.1.1",
     "humre>=1.0.0",
+    "playsound3>=3.3.1",
+    "pyinstaller>=6.19.0",
     "pyperclip>=1.11.0",
     "pytest>=9.0.2",
     "requests",
